@@ -1,3 +1,5 @@
+
+// made to learn global component
 const AnotherListItem = ({data}) =>{
     return(
         <>
