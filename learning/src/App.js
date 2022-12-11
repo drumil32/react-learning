@@ -24,7 +24,7 @@ function App() {
     // this portion is to learn how to use useParams hook
     <BrowserRouter>
     <Routes>
-      <Route path="profile/:id" element={<Profile/>}/>
+      <Route path="profile/:id/:name" element={<Profile/>}/>
     </Routes>
   </BrowserRouter>
   );
