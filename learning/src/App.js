@@ -9,11 +9,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import UseRefExample1 from './components/UseRefExample1';
 // import UseRefExample2 from './components/UseRefExample2';
 import UseRefExample3 from './components/UseRefExample3';
+import UseReducer from './components/UseReducer';
+import LoginUseReducer from './components/LoginUseReducer';
+
+const emailReducer = (state,actions) => {
+  return {value:'',isValid:false};
+}
 
 function App() {
-  const [data,setData] = useState(profileData);
+  // const [data,setData] = useState(profileData);
+
 
   return (
+    // <UseReducer />
+    <LoginUseReducer />
     // <>
     //   <Header bgColor="red" textColor="green" text={123}/>
     //     <div>
@@ -33,7 +42,7 @@ function App() {
 
   // <UseRefExample1/>
   // <UseRefExample2/>
-  <UseRefExample3/>
+  // <UseRefExample3/>
 
   );
 }
